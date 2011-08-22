@@ -1,0 +1,12 @@
+
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+PROJECT(itkTransformPointSetFilterTest)
+
+FIND_PACKAGE(ITK REQUIRED)
+INCLUDE(${ITK_USE_FILE})
+
+##################
+ADD_EXECUTABLE(itkTransformPointSetFilterTest itkTransformPointSetFilterTest.cxx)
+TARGET_LINK_LIBRARIES(itkTransformPointSetFilterTest ITKIO)
+
